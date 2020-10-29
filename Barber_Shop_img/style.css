@@ -11,7 +11,8 @@
     height: 100vh;
     width: 100vw;
     transition: background-image 2s ;
-    position: static;
+    /* position: fixed;
+    z-index: 0; */
 }
 
 #banner .logo{
@@ -19,6 +20,8 @@
     position: absolute;
     top: 3%;
     left: 10%;
+    position: fixed;
+    z-index: 10000000;
 }
 .banner-txt{
     position: absolute;
@@ -72,7 +75,7 @@
 .sidenav{
     position: absolute;
     height: 100vh;
-    z-index: 2;
+    z-index: 10000000000000;
     right: 0;
     top: 0; 
     background-color: #009688;
@@ -110,14 +113,18 @@
     cursor: pointer;
     position: fixed;
     opacity: 0.95;
+    border-radius: 50% ;
+    background-color: rgba(255, 20, 147 ,0.2);
 }
 
-#our-initiatives{
-    height: 100vh;
+
+#our-initiativesOne{
+    height: 200vh;
     width: 100vw;
     z-index: 100;
    /* background-color: #009b86; */
    position: relative;
+   
 }
 
 .ini-h1{
@@ -133,13 +140,14 @@
     text-shadow: 2px 3px 4px #0096bb;
 }
 
-.our-initiatives
+.our-initiatives1
 {
     display: flex;
     z-index: 1;
+    height: 100vh;
 }
 
-.photo-in
+.photo-in1
 {
     padding: 5px ;
     /* margin: 1px; */
@@ -147,7 +155,7 @@
     width: 20vw;
 }
 
-.photo-in img{
+.photo-in1 img{
     height: 500px;
     width: 400px;
     background-color: white;
@@ -155,25 +163,25 @@
     margin-left: 20%;
 }
 
-.photo-in::after
+.photo-in1::after
 {
     content: '';
     position: absolute;
     height: 500px;
     width: 400px;
-    top: 170px;
+    top: 45px;
     left: 190px;
     border: 10px solid  #009686;
     z-index: -1;
 }
-.desc-in
+.desc-in1
 {
     display: flex;
     flex-direction: column;
     flex: 1;
-    width: 50vw;
+    width: 45vw;
 }
-.desc-in h2{
+.desc-in1 h2{
     flex-grow:1;
     padding: 25px;
     font-weight: 700;
@@ -183,7 +191,7 @@
     font-size: 45px;
 
 }
-.desc-in p{
+.desc-in1 p{
     flex-grow: 4;
     justify-content: flex-start;
     padding: -10px;
@@ -193,7 +201,7 @@
 
 }
 
-.WE-btn 
+.WE-btn1
 {
     height: 30px;
     width: 100px;
@@ -204,14 +212,14 @@
     border: 0.8px solid rgba(255, 20, 147 ,0.5);
     cursor: pointer;
     position: absolute;
-    top: 75%;
+    top: 26%;
     left: 65%;
     color: rgba(255, 20, 147 ,0.9) ;
     text-decoration: none;
 
 }
 
-.WE-btn span{
+.WE-btn1 span{
     position: absolute;
     top: 0;
     left: 0;
@@ -222,11 +230,225 @@
     z-index: -1;
 }
 
-.WE-btn:hover span{
+.WE-btn1:hover span{
     width: 100%;
 }
 
-.WE-btn:hover
+.WE-btn1:hover
 {
     color: #fff;
+}
+
+/* - -- - - - - -   initiatives 2   - - - - - - - - */
+
+.our-initiatives2
+{
+    display: flex;
+    z-index: 1;
+    height: 100vh;
+}
+
+.photo-in2
+{
+    padding: 5px ;
+    /* margin: 1px; */
+    flex: 1;
+    width: 20vw;
+    justify-content: flex-end;
+    float: right;
+}
+
+.photo-in2 img{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    margin-left: 20%;
+}
+
+.photo-in2::after
+{
+    content: '';
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    top: 767px;
+    right: 160px;
+    border: 10px solid  #009686;
+    z-index: -1;
+}
+.desc-in2
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 45vw;
+
+}
+.desc-in2 h2{
+    flex-grow:1;
+    padding: 25px;
+    font-weight: 700;
+    color: rgba(255, 20, 147 ,0.5) ;
+    justify-content: center;
+    align-content: center;
+    font-size: 45px;
+    padding-left: 50px;
+}
+.desc-in2 p{
+    flex-grow: 4;
+    justify-content: flex-start;
+    padding: -10px;
+    width: 45vw;
+    padding: 0 15px;
+    padding-left: 50px;
+    font-size: large;
+
+}
+
+.WE-btn2
+{
+    height: 30px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding :15px 50px ;
+    border: 0.8px solid rgba(255, 20, 147 ,0.5);
+    cursor: pointer;
+    position: absolute;
+    top: 76%;
+    right: 65%;
+    color: rgba(255, 20, 147 ,0.9) ;
+    text-decoration: none;
+
+}
+
+.WE-btn2 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:  rgba(255, 20, 147 ,0.5);
+    transition: 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.WE-btn2:hover span{
+    width: 100%;
+}
+
+.WE-btn2:hover
+{
+    color: #fff;
+}
+
+#feed-form{
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 20, 147 ,0.15);
+}
+
+.inp-form
+{
+    padding: 15px;
+    display: flex;
+    border: #fff;
+    transition: 1s ease;
+}
+
+input[type=text]
+{
+    padding : 15px  30px;
+    align-items: stretch;
+    width: 40vw;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+input[type=text]:focus
+{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.num
+{
+    padding : 15px  30px;
+    width: 40vw;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.num:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.email-id
+{
+    padding : 15px  30px;
+    width: 40vw;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.email-id:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.txtarea
+{
+    padding : 10px;
+    width: 45vw;
+    background-color: transparent;
+    border: 1px solid #009686;
+    box-sizing: border-box;
+    outline: none;
+}
+.txtarea:focus{
+    background-color: rgba(0,150,134,0.2);
+    border: none;
+    box-sizing: border-box;
+}
+.feed-h2
+{
+    font-size: 60px;
+    align-items: center;
+    margin-left: 13vw;
+    margin-bottom: 80px;
+    font-weight: 250;
+    color: rgba(0,150,134,0.5) ;
+    text-shadow: 2px 3px 4px rgba(0,150,134,0.2);
+}
+
+.submitBtn
+{
+    display: inline-block;
+    /* padding: 15px 25px; */
+    width: 140px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    outline: none;
+    border: rgba(0,150,134,1);
+    padding: 0px 40px;
+}
+.submitBtn:hover
+{
+    background-color: rgba(0,150,134,0.4);
+    border: rgba(0,150,134,1);
+    opacity: 0.8;
 }
