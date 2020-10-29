@@ -12,11 +12,13 @@ menuBtn.onclick = () =>{
         {
             sideNav.style.width = '0px';
             menuBtn.src = 'imgs/menu.png';
+            menuBtn.style.backgroundColor = " rgba(255, 20, 147 ,0.2) " ;
 
         }
     else{
             sideNav.style.width = '250px';
             menuBtn.src = 'imgs/close.png';
+            menuBtn.style.backgroundColor = " transparent" ;
         }
     
 }
