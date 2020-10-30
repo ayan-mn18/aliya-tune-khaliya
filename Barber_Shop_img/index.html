@@ -6,9 +6,10 @@
     <title>Noob devs ep2</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <section id="main">  
+    <section id="main" >  
 
         <div class="sidenav">
             <nav>
@@ -32,26 +33,24 @@
                 <a href=""><span></span>Learn More</a>
                 <a href=""><span></span>Donate Now !!</a>
             </div>
-            
-           
 
         </section>
            
         <!-- Our Initiatives -->
         <h1 class="ini-h1">Our Initiatives</h1>
 
-        <section id="our-initiativesOne">
-
-            
+        <section id="our-initiativesOne" >
 
             <div class="box-in">
                 
-                <div class="our-initiatives1">
+                <div class="our-initiatives1" 
+                data-aos="zoom-in-up"
+                >
 
-                    <div class="photo-in1">
+                    <div class="photo-in1"  >
                         <img src="imgs/women.jpeg" alt="">
                     </div>
-                    <div class="desc-in1">
+                    <div class="desc-in1"   >
                         <h2>Women Empowerment</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit dolores, error reprehenderit et nemo atque tempora, repudiandae velit distinctio quibusdam earum ut quaerat, aspernatur id! Aliquid culpa animi deserunt soluta in fuga, ab quaerat libero ut, earum commodi quae? Incidunt, consequuntur. Quia possimus iste quis!</p>
                         
@@ -59,7 +58,9 @@
                 </div>
                 <a href="" class="WE-btn1"><span></span>Know More</a>
                 
-                <div class="our-initiatives2">
+                <div class="our-initiatives2"
+                data-aos="zoom-in-up"
+                >
                     
                     <div class="desc-in2">
                         <h2>Women Empowerment</h2>
@@ -78,12 +79,13 @@
 
         </section>
 
-        <section id="our-initiativesOne">
+        <section id="our-initiativesOne" >
 
 
-            <div class="box-in">
+            <div class="box-in" >
                 
-                <div class="our-initiatives1">
+                <div class="our-initiatives1"
+                data-aos="zoom-in-up">
 
                     <div class="photo-in1">
                         <img src="imgs/women.jpeg" alt="">
@@ -96,7 +98,8 @@
                 </div>
                 <a href="" class="WE-btn1"><span></span>Know More</a>
                 
-                <div class="our-initiatives2">
+                <div class="our-initiatives2"
+                data-aos="zoom-in-up">
                     
                     <div class="desc-in2">
                         <h2>Women Empowerment</h2>
@@ -147,7 +150,14 @@
     </section>
 
 <script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset : 400,
+        duration : 1000
+    });
 
+</script>
 </body>
 
 
