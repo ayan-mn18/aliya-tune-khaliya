@@ -13,6 +13,7 @@
     transition: background-image 2s ;
     /* position: fixed;
     z-index: 0; */
+    background-attachment : fixed ;
 }
 
 #banner .logo{
